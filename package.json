@@ -1,0 +1,17 @@
+{
+  "name": "logistics-shipment-usage-meter",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "test": "node --experimental-strip-types test/shipment_meter.test.ts",
+    "start": "node --experimental-strip-types src/run_cutover.ts",
+    "typecheck": "tsc --noEmit"
+  },
+  "dependencies": {
+    "zod": "^3.23.8"
+  },
+  "devDependencies": {
+    "@types/node": "^22.10.2",
+    "typescript": "^5.7.2"
+  }
+}
